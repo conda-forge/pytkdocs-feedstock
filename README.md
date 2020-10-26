@@ -3,7 +3,7 @@ About pytkdocs
 
 Home: https://github.com/pawamoy/pytkdocs
 
-Package license: MIT
+Package license: ISC
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytkdocs-feedstock/blob/master/LICENSE.txt)
 
