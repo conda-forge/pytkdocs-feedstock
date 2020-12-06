@@ -22,6 +22,8 @@ requirements:
     - pip
     - python >=3.6,<4.0
     - poetry
+    - dataclasses >=0.7
+    - typing-extensions >=3.7.4.3
   run:
     - python >=3.6,<4.0
 
