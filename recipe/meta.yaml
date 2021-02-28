@@ -1,5 +1,5 @@
 {% set name = "pytkdocs" %}
-{% set version = "0.10.1" %}
+{% set version = "0.11.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytkdocs-{{ version }}.tar.gz
-  sha256: f3d510063e7c2951c7b52cc860846ecbd7b21ec4b2253ae5c0084a26b233132f
+  sha256: e63ec71dc5e9feabc672f862f04394abd26557c7831c25cb8a60c99af36693b9
 
 build:
   number: 0
