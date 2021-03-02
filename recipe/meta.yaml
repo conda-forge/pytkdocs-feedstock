@@ -12,7 +12,6 @@ source:
 
 build:
   number: 2
-  noarch: python
   entry_points:
     - pytkdocs = pytkdocs.cli:main
   script: {{ PYTHON }} -m pip install . -vv
