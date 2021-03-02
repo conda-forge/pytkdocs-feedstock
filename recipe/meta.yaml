@@ -19,10 +19,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6,<4.0
+    - python
     - poetry
   run:
-    - python >=3.6,<4.0
+    - python
     - astunparse >=1.6.3  # [py<39]
     - dataclasses >=0.7,<0.9  # [py==36]
     - typing-extensions >=3.7.4.3  # [py<38]
