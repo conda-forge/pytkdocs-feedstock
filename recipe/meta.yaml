@@ -22,11 +22,12 @@ requirements:
     - pip
     - python >=3.6,<4.0
     - poetry
-    - dataclasses >=0.7,<0.9
-    - typing-extensions >=3.7.4.3
-    - astunparse >=1.6.3
   run:
     - python >=3.6,<4.0
+    - astunparse >=1.6.3  # [py<39]
+    - dataclasses >=0.7,<0.9  # [py==36]
+    - typing-extensions >=3.7.4.3  # [py<38]
+    - cached-property >=3.7.4.3  # [py<38]
 
 test:
   imports:
