@@ -24,11 +24,9 @@ requirements:
     - poetry
     - dataclasses >=0.7,<0.9
     - typing-extensions >=3.7.4.3
+    - astunparse >=1.6.3
   run:
     - python >=3.6,<4.0
-    - astunparse >=1.6.3
-    - cached-property >=1.5.2
-    - docstring_parser >=0.7.3
 
 test:
   imports:
