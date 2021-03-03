@@ -15,16 +15,13 @@ build:
   entry_points:
     - pytkdocs = pytkdocs.cli:main
   script: {{ PYTHON }} -m pip install . -vv
+  skip: true # [py<36]
 
 requirements:
   host:
     - pip
     - python
     - poetry
-    - astunparse >=1.6.3  # [py<39]
-    - dataclasses >=0.7,<0.9  # [py==36]
-    - typing-extensions >=3.7.4.3  # [py<38]
-    - cached-property >=1.5.2  # [py<38]
   run:
     - python
     - astunparse >=1.6.3  # [py<39]
