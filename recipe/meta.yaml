@@ -15,7 +15,7 @@ build:
   entry_points:
     - pytkdocs = pytkdocs.cli:main
   script: {{ PYTHON }} -m pip install . -vv
-  skip: true # [py<36]
+  skip: true  # [py<36]
 
 requirements:
   host:
