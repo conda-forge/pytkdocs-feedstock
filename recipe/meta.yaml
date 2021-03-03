@@ -11,8 +11,7 @@ source:
   sha256: e63ec71dc5e9feabc672f862f04394abd26557c7831c25cb8a60c99af36693b9
 
 build:
-  number: 1
-  noarch: python
+  number: 2
   entry_points:
     - pytkdocs = pytkdocs.cli:main
   script: {{ PYTHON }} -m pip install . -vv
@@ -20,13 +19,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6,<4.0
+    - python
     - poetry
-    - dataclasses >=0.7,<0.9
-    - typing-extensions >=3.7.4.3
-    - astunparse >=1.6.3
   run:
-    - python >=3.6,<4.0
+    - python
+    - astunparse >=1.6.3  # [py<39]
+    - dataclasses >=0.7,<0.9  # [py==36]
+    - typing_extensions >=3.7.4.3  # [py<38]
+    - cached-property >=1.5.2  # [py<38]
 
 test:
   imports:
