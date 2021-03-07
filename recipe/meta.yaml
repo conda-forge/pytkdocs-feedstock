@@ -12,7 +12,6 @@ source:
 
 build:
   number: 2
-  noarch: python
   entry_points:
     - pytkdocs = pytkdocs.cli:main
   script: {{ PYTHON }} -m pip install . -vv
@@ -25,10 +24,10 @@ requirements:
     - poetry
   run:
     - python >=3.6,<4.0
-    - astunparse >=1.6.3, <1.7.0
-    - cached-property >=1.5.2, <1.6
-    - dataclasses >=0.7,<0.9
-    - typing-extensions >=3.7.4.3
+    - astunparse >=1.6.3, <1.7.0  # [py<39]
+    - cached-property >=1.5.2, <1.6  # [py<38]
+    - dataclasses >=0.7,<0.9  # [py==36]
+    - typing-extensions >=3.7.4.3  # [py<38]
 
 test:
   imports:
