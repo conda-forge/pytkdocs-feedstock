@@ -23,7 +23,7 @@ requirements:
     - python
     - poetry
   run:
-    - python >=3.6,<4.0
+    - python
     - astunparse >=1.6.3, <1.7.0  # [py<39]
     - cached-property >=1.5.2, <1.6  # [py<38]
     - dataclasses >=0.7,<0.9  # [py==36]
