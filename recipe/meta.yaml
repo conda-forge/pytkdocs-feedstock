@@ -21,7 +21,7 @@ requirements:
   host:
     - pip
     - python
-    - poetry
+    - pdm
   run:
     - python
     - astunparse >=1.6,<1.7  # [py<39]
