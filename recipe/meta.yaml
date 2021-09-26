@@ -15,7 +15,7 @@ build:
   entry_points:
     - pytkdocs = pytkdocs.cli:main
   script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [py<36 or (win and py36)]
+  skip: true  # [py<37]
 
 requirements:
   host:
@@ -25,7 +25,7 @@ requirements:
   run:
     - python
     - astunparse >=1.6,<1.7  # [py<39]
-    - dataclasses >=0.7,<0.9  # [py==36]
+    - dataclasses >=0.7,<0.9  # [py<37]
     - typing_extensions >=3.7,<3.8  # [py<38]
     - cached-property >=1.5,<1.6  # [py<38]
     - docstring_parser >=0.7,<0.8
