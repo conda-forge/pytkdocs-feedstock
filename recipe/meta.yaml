@@ -1,5 +1,5 @@
 {% set name = "pytkdocs" %}
-{% set version = "0.11.1" %}
+{% set version = "0.12.0" %}
 
 
 package:
@@ -8,26 +8,27 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytkdocs-{{ version }}.tar.gz
-  sha256: 1ec7e028fe8361acc1ce909ada4e6beabec28ef31e629618549109e1d58549f0
+  sha256: 746905493ff79482ebc90816b8c397c096727a1da8214a0ccff662a8412e91b3
 
 build:
   number: 0
   entry_points:
     - pytkdocs = pytkdocs.cli:main
   script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [py<36 or (win and py36)]
+  skip: true  # [py<37]
 
 requirements:
   host:
     - pip
     - python
-    - poetry
+    - pdm
   run:
     - python
-    - astunparse >=1.6.3  # [py<39]
-    - dataclasses >=0.7,<0.9  # [py==36]
-    - typing_extensions >=3.7.4.3  # [py<38]
-    - cached-property >=1.5.2  # [py<38]
+    - astunparse >=1.6,<1.7  # [py<39]
+    - dataclasses >=0.7,<0.9  # [py<37]
+    - typing_extensions >=3.7,<3.8  # [py<38]
+    - cached-property >=1.5,<1.6  # [py<38]
+    - docstring_parser >=0.7,<0.8
 
 test:
   imports:
