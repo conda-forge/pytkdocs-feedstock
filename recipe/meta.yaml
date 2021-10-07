@@ -41,7 +41,8 @@ test:
     - pip
 
 about:
-  home: https://github.com/pawamoy/pytkdocs
+  home: https://github.com/mkdocstrings/pytkdocs
+  doc_url: https://mkdocstrings.github.io/pytkdocs/
   summary: Load Python objects documentation.
   license: ISC
   license_file: LICENSE
