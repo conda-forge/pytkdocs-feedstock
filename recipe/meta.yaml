@@ -11,7 +11,7 @@ source:
   sha256: 5d5ebf316ed9b32f3b85270a9d58f478978ab4fbb472fd0f3550cd925a220f1d
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - pytkdocs = pytkdocs.cli:main
   script: {{ PYTHON }} -m pip install . -vv
