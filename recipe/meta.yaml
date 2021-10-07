@@ -1,5 +1,5 @@
 {% set name = "pytkdocs" %}
-{% set version = "0.12.0" %}
+{% set version = "0.13.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytkdocs-{{ version }}.tar.gz
-  sha256: 746905493ff79482ebc90816b8c397c096727a1da8214a0ccff662a8412e91b3
+  sha256: 5d5ebf316ed9b32f3b85270a9d58f478978ab4fbb472fd0f3550cd925a220f1d
 
 build:
   number: 0
@@ -41,7 +41,8 @@ test:
     - pip
 
 about:
-  home: https://github.com/pawamoy/pytkdocs
+  home: https://github.com/mkdocstrings/pytkdocs
+  doc_url: https://mkdocstrings.github.io/pytkdocs/
   summary: Load Python objects documentation.
   license: ISC
   license_file: LICENSE
