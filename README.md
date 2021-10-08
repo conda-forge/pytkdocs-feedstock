@@ -1,13 +1,15 @@
 About pytkdocs
 ==============
 
-Home: https://github.com/pawamoy/pytkdocs
+Home: https://github.com/mkdocstrings/pytkdocs
 
 Package license: ISC
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytkdocs-feedstock/blob/master/LICENSE.txt)
 
 Summary: Load Python objects documentation.
+
+Documentation: https://mkdocstrings.github.io/pytkdocs/
 
 Current build status
 ====================
