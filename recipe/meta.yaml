@@ -1,5 +1,5 @@
 {% set name = "pytkdocs" %}
-{% set version = "0.13.0" %}
+{% set version = "0.14.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytkdocs-{{ version }}.tar.gz
-  sha256: 5d5ebf316ed9b32f3b85270a9d58f478978ab4fbb472fd0f3550cd925a220f1d
+  sha256: 6588939d6f56998798f716aa6f11adcbc8f77f63c5ae07f820c99fbdc40a2f03
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - pytkdocs = pytkdocs.cli:main
   script: {{ PYTHON }} -m pip install . -vv
