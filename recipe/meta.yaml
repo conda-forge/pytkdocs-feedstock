@@ -11,7 +11,7 @@ source:
   sha256: b3420ffefeb8892f4498dd8ad6ecca867f7cab1b7741057ac92f30bfe2ccdb4d
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - pytkdocs = pytkdocs.cli:main
   script: {{ PYTHON }} -m pip install . -vv
@@ -26,7 +26,7 @@ requirements:
     - python
     - astunparse >=1.6  # [py<39]
     - cached-property >=1.5  # [py<38]
-    - dataclasses >=0.7,<0.9  # [py<37]
+    - dataclasses >=0.7  # [py<37]
     - typing_extensions >=3.7  # [py<38]
     - docstring_parser >=0.7
 
