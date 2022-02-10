@@ -215,4 +215,5 @@ Feedstock Maintainers
 =====================
 
 * [@bandersen23](https://github.com/bandersen23/)
+* [@cpcloud](https://github.com/cpcloud/)
 
