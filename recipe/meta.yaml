@@ -16,15 +16,14 @@ build:
   entry_points:
     - pytkdocs = pytkdocs.cli:main
   script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [py<37]
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.7
     - pdm
   run:
-    - python
+    - python >=3.7
     - astunparse >=1.6
     - cached-property >=1.5
     - typing_extensions >=3.7
