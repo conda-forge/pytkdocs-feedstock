@@ -11,6 +11,7 @@ source:
   sha256: 274407bcefec58d7e411adb03b84da49120107912b1697d17d4a3aea0583f388
 
 build:
+  noarch: python
   number: 0
   entry_points:
     - pytkdocs = pytkdocs.cli:main
