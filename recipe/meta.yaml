@@ -26,7 +26,6 @@ requirements:
     - python
     - astunparse >=1.6
     - cached-property >=1.5
-    - dataclasses >=0.7  # [py<37]
     - typing_extensions >=3.7
     - docstring_parser >=0.7
 
