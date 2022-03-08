@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - pytkdocs = pytkdocs.cli:main
   script: {{ PYTHON }} -m pip install . -vv
@@ -38,9 +38,17 @@ test:
     - pytkdocs.cli
   commands:
     - pip check
+    - pytest
     - pytkdocs --help
   requires:
     - pip
+    - pytest >=6.2
+    - pytest-xdist >=2.4
+    - django >=3.2
+    - marshmallow >=3.13
+    - pydantic >=1.8
+  source_files:
+    - tests
 
 about:
   home: https://github.com/mkdocstrings/pytkdocs
