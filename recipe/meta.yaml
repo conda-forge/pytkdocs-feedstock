@@ -1,5 +1,5 @@
 {% set name = "pytkdocs" %}
-{% set version = "0.16.1" %}
+{% set version = "0.16.2" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytkdocs-{{ version }}.tar.gz
-  sha256: e2ccf6dfe9dbbceb09818673f040f1a7c32ed0bffb2d709b06be6453c4026045
+  sha256: e75538a34932996b8803fbad4e4f6851fc0e9fd9aea86fc6602d6582c12098f3
 
 build:
   noarch: python
-  number: 1
+  number: 0
   entry_points:
     - pytkdocs = pytkdocs.cli:main
   script: {{ PYTHON }} -m pip install . -vv
@@ -20,10 +20,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
-    - pdm
+    - python >=3.8
+    - pdm-backend
   run:
-    - python >=3.7
+    - python >=3.8
     - astunparse >=1.6
     - cached-property >=1.5
     - typing_extensions >=3.7
