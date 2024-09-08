@@ -20,15 +20,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
-    - pdm
+    - python >=3.8
+    - pdm-backend
   run:
-    - python >=3.7
+    - python >=3.8
     - astunparse >=1.6
     - cached-property >=1.5
     - typing_extensions >=3.7
     - docstring_parser >=0.7
-    # - cached_property >=1.5
 
 test:
   imports:
