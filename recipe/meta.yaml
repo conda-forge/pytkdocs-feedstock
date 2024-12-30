@@ -7,12 +7,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytkdocs-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pytkdocs-{{ version }}.tar.gz
   sha256: e75538a34932996b8803fbad4e4f6851fc0e9fd9aea86fc6602d6582c12098f3
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - pytkdocs = pytkdocs.cli:main
   script: {{ PYTHON }} -m pip install . -vv
@@ -20,10 +20,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - pdm-backend
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - astunparse >=1.6
     - cached-property >=1.5
     - typing_extensions >=3.7
@@ -47,6 +47,7 @@ test:
     - django >=3.2
     - marshmallow >=3.13
     - pydantic >=1.8
+    - python {{ python_min }}
   source_files:
     - tests
 
